@@ -32,7 +32,7 @@ const int averageRejectValue = 15; // If the average timing of all the knocks is
 const int knockFadeTime = 75;     // Milliseconds we allow a knock to fade before we listen for another one. (Debounce timer.)
 const int lockOperateTime = 2500;  // Milliseconds that we operate the lock solenoid latch before releasing it.
 const int maximumKnocks = 20;      // Maximum number of knocks to listen for.
-const int knockComplete = 1200;    // Longest time to wait for a knock before we assume that it's finished. (milliseconds)
+const int knockComplete = 600;    // Longest time to wait for a knock before we assume that it's finished. (milliseconds)
  
 byte secretCode[maximumKnocks] = {50, 25, 25, 50, 100, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};  // Initial setup: "Shave and a Hair Cut, two bits."
 int knockReadings[maximumKnocks];    // When someone knocks this array fills with the delays between knocks.
